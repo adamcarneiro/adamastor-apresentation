@@ -1,0 +1,52 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding: 10px;
+}
+
+table{
+  width: 100%;
+  border-spacing: 10px;
+  border-collapse: collapse;
+  /* padding: 20px; */
+}
+thead{
+  /* height: 30px; */
+  background-color: #C4C4C4;
+}
+
+tbody{
+  background-color: #EAEAEA;
+}
+tr{
+  border-bottom: 1px solid #999999;
+}
+
+.btn
+{
+  width: 163px;
+  height: 38px;
+  color: white;
+  background-color: #2b6ab5;
+  border: 1px solid #2b6ab5;
+  /* border-color: #2b6ab5; */
+  border-radius: 4px;
+  cursor:pointer;
+  align-self: flex-end;
+}
+
+input
+{
+    width: 70px;
+    height: 17px;
+}
+
+
+th,td
+{ padding:  4px;
+  text-align: left;
+  height: 36px;
+  font-size: 14px;;
+}

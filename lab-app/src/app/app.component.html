@@ -1,0 +1,31 @@
+<div class="container">
+  <h3>Editar [Designação da Escola]</h3>
+  <form action="">
+  <table>
+    <thead>
+    <tr>
+      <th>Designação</th>
+      <th>Funcionais</th>
+      <th>Não Funcionais</th>
+      <th>Número Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sala of salas; index as i">
+      <td>{{sala.designation}}</td>
+      <!-- <td><input type="number" [(ngModel)]="newItem.name" name="name"></td> -->
+      <td><input type="number" min="0" name="functional" [disabled]="i===0 ? 'disable' : false"></td>
+      <td><input type="number" min="0" name="nfunctional" [disabled]="i===0 ? 'disable' : false" ></td>
+      <!-- <td><input [disabled]="i===0 ? 'disable' : false"  type="number" min="0"></td> -->
+      <td><input [disabled]="i!=0 ? 'disable' : false" type="number" min="0"></td>
+    </tr>
+  </tbody>
+  </table>
+  </form>
+  <button class="btn" type="submit">Actualizar</button>
+</div>
+
+
+
+
+<!-- <app-table></app-table> -->
